@@ -1,6 +1,6 @@
 {
   "name": "dopenative",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A utility-first React Native Framework for Web, iOS and Android, compatible with Expo",
   "main": "src/index.js",
   "scripts": {
@@ -39,6 +39,8 @@
     "eslint": "8.2.0",
     "expo-localization": "11.0.0",
     "i18n-js": "3.8.0",
+    "jest": "^26.0.1",
+    "jest-expo": "^40.0.1",
     "prettier": "2.4.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
