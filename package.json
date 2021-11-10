@@ -1,6 +1,6 @@
 {
   "name": "dopenative",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A utility-first React Native Framework for Web, iOS and Android, compatible with Expo",
   "main": "src/index.js",
   "scripts": {
