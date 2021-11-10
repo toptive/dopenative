@@ -1,55 +1,55 @@
 import React from 'react'
-import TNDefaultTheme from './default'
+import DNDefaultTheme from './default'
 import { useColorScheme } from 'react-native-appearance'
 
-export default TNDefaultTheme
+export default DNDefaultTheme
 
-export const TNContext = React.createContext()
+export const DNContext = React.createContext()
 
 const defaultProps = {
   children: null,
   theme: {},
 }
 
-export function TNProvider(props = defaultProps) {
+export function DNProvider(props = defaultProps) {
   const { theme, children } = props
   const colorScheme = useColorScheme()
-  const overridenTheme = { ...TNDefaultTheme, ...theme }
+  const overridenTheme = { ...DNDefaultTheme, ...theme }
   const context = {
     theme: overridenTheme,
     appearance: colorScheme,
   }
-  return <TNContext.Provider value={context}>{children}</TNContext.Provider>
+  return <DNContext.Provider value={context}>{children}</DNContext.Provider>
 }
 
 export function useTrulyNative(Component, styles) {
   return props => {
     const colorScheme = useColorScheme()
     return (
-      <TNContext.Consumer>
+      <DNContext.Consumer>
         {context => (
           <Component
             {...props}
-            theme={{ ...TNDefaultTheme, ...context.theme }}
+            theme={{ ...DNDefaultTheme, ...context.theme }}
             appearance={colorScheme || context.appearance}
             styles={
               styles &&
               styles(
-                { ...TNDefaultTheme, ...context.theme },
+                { ...DNDefaultTheme, ...context.theme },
                 context.appearance,
               )
             }
           />
         )}
-      </TNContext.Consumer>
+      </DNContext.Consumer>
     )
   }
 }
 
 export function extendTheme(theme) {
-  return { ...TNDefaultTheme, ...theme }
+  return { ...DNDefaultTheme, ...theme }
 }
 
 export function useTheme() {
-  return React.useContext(TNContext)
+  return React.useContext(DNContext)
 }

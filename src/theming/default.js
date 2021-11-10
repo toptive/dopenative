@@ -1,4 +1,4 @@
-const TNDefaultTheme = {
+const DNDefaultTheme = {
   colors: {
     light: {
       primaryBackground: '#ffffff',
@@ -31,4 +31,4 @@ const TNDefaultTheme = {
   },
 }
 
-export default TNDefaultTheme
+export default DNDefaultTheme

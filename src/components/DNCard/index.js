@@ -4,7 +4,7 @@ import { useSpacing } from '../../hooks/useSpacing'
 import { useTrulyNative } from '../../theming'
 import dynamicStyles from './styles'
 
-const TNCard = props => {
+const DNCard = props => {
   const {
     containerStyle,
     radius,
@@ -32,4 +32,4 @@ const TNCard = props => {
   )
 }
 
-export default useTrulyNative(TNCard, dynamicStyles)
+export default useTrulyNative(DNCard, dynamicStyles)

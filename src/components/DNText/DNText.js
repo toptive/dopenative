@@ -4,7 +4,7 @@ import { useSpacing } from '../../hooks/useSpacing'
 import { useTrulyNative } from '../../theming'
 import dynamicStyles from './styles'
 
-const TNText = props => {
+const DNText = props => {
   const {
     style,
     children,
@@ -35,4 +35,4 @@ const TNText = props => {
   return <Text style={textStyles}>{children}</Text>
 }
 
-export default memo(useTrulyNative(TNText, dynamicStyles))
+export default memo(useTrulyNative(DNText, dynamicStyles))

@@ -4,10 +4,10 @@ import { Text, TouchableHighlight, View } from 'react-native'
 import { useSpacing } from '../../hooks/useSpacing'
 import { useTrulyNative } from '../../theming'
 import dynamicStyles from './styles'
-import TNButton from '../TNButton'
-import { TNText } from '../TNText'
+import DNButton from '../DNButton'
+import { DNText } from '../DNText'
 
-const TNDialogContent = props => {
+const DNDialogContent = props => {
   const {
     containerStyle,
     titleStyle,
@@ -38,17 +38,17 @@ const TNDialogContent = props => {
   return (
     <TouchableHighlight style={containerStyles}>
       <View style={styles.tnDialogInnerContainer}>
-        <TNText style={titleStyles} mb8>
+        <DNText style={titleStyles} mb8>
           {title}
-        </TNText>
-        <TNText style={messageStyles} mb8>
+        </DNText>
+        <DNText style={messageStyles} mb8>
           {message}
-        </TNText>
+        </DNText>
         <View style={styles.tnActionsContainer}>
           {actions.map((action, index) => {
             if (action.secondary) {
               return (
-                <TNButton
+                <DNButton
                   text={action.title}
                   onPress={action.onPress}
                   secondary
@@ -61,7 +61,7 @@ const TNDialogContent = props => {
             }
             if (action.destructive) {
               return (
-                <TNButton
+                <DNButton
                   containerStyle={styles.tnDestructiveButton}
                   textStyle={styles.tnDestructiveButtonText}
                   text={action.title}
@@ -75,7 +75,7 @@ const TNDialogContent = props => {
               )
             }
             return (
-              <TNButton
+              <DNButton
                 text={action.title}
                 onPress={action.onPress}
                 ml2
@@ -91,7 +91,7 @@ const TNDialogContent = props => {
   )
 }
 
-const TNDialog = Component =>
+const DNDialog = Component =>
   forwardRef((props, myRef) => {
     const [isVisible, setIsVisible] = React.useState(false)
 
@@ -109,5 +109,4 @@ const TNDialog = Component =>
     }
     return <Component {...props} />
   })
-// export default useTrulyNative(TNToast, dynamicStyles)
-export default TNDialog(useTrulyNative(TNDialogContent, dynamicStyles))
+export default DNDialog(useTrulyNative(DNDialogContent, dynamicStyles))

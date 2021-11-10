@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native'
 
 const styles = (theme, appearance) => {
   return new StyleSheet.create({
-    tnButtonContainer: {
+    DNButtonContainer: {
       borderRadius: 3,
       alignItems: 'center',
       justifyContent: 'center',
@@ -13,12 +13,12 @@ const styles = (theme, appearance) => {
       paddingTop: 16,
       paddingBottom: 16,
     },
-    tnButtonText: {
+    DNButtonText: {
       color: theme.colors[appearance].foregroundContrast,
       fontSize: theme.fontSizes.m,
       fontWeight: theme.fontWeights.m,
     },
-    tnButtonShadow: {
+    DNButtonShadow: {
       shadowColor: '#000',
       shadowOffset: {
         width: 0,

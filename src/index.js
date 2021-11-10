@@ -1,35 +1,35 @@
-import TNButton from './components/TNButton'
-import TNCard from './components/TNCard'
-import TNDialog from './components/TNDialog'
-import TNToast from './components/TNToast'
-import TNEmptyStateView from './components/TNEmptyStateView'
-import { TNText } from './components/TNText'
-import { TNTextInput } from './components/TNTextInput'
-import { TNView } from './components/TNView'
-import { TNImage } from './components/TNImage'
+import DNButton from './components/DNButton'
+import DNCard from './components/DNCard'
+import DNDialog from './components/DNDialog'
+import DNToast from './components/DNToast'
+import DNEmptyStateView from './components/DNEmptyStateView'
+import { DNText } from './components/DNText'
+import { DNTextInput } from './components/DNTextInput'
+import { DNView } from './components/DNView'
+import { DNImage } from './components/DNImage'
 
 import theme, {
   extendTheme,
   useTrulyNative,
-  TNProvider,
-  TNContext,
+  DNProvider,
+  DNContext,
   useTheme,
 } from './theming'
 
 export {
-  TNButton,
-  TNCard,
-  TNImage,
-  TNToast,
-  TNText,
-  TNTextInput,
-  TNView,
-  TNDialog,
-  TNEmptyStateView,
+  DNButton,
+  DNCard,
+  DNImage,
+  DNToast,
+  DNText,
+  DNTextInput,
+  DNView,
+  DNDialog,
+  DNEmptyStateView,
   theme,
-  TNContext,
+  DNContext,
   extendTheme,
   useTrulyNative,
-  TNProvider,
+  DNProvider,
   useTheme,
 }

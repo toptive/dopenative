@@ -5,7 +5,7 @@ import { useSpacing } from '../../hooks/useSpacing'
 import { useTrulyNative } from '../../theming'
 import dynamicStyles from './styles'
 
-const TNToastContent = props => {
+const DNToastContent = props => {
   const {
     containerStyle,
     textStyle,
@@ -46,7 +46,7 @@ const TNToastContent = props => {
   )
 }
 
-const TNToast = Component =>
+const DNToast = Component =>
   forwardRef((props, myRef) => {
     const [isVisible, setIsVisible] = React.useState(false)
 
@@ -73,4 +73,4 @@ const TNToast = Component =>
     return <Component {...props} />
   })
 // export default useTrulyNative(TNToast, dynamicStyles)
-export default TNToast(useTrulyNative(TNToastContent, dynamicStyles))
+export default DNToast(useTrulyNative(DNToastContent, dynamicStyles))

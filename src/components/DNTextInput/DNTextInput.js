@@ -2,10 +2,9 @@ import React, { memo } from 'react'
 import { TextInput } from 'react-native'
 import { useSpacing } from '../../hooks/useSpacing'
 import { useTrulyNative } from '../../theming'
-import { TNView } from '../TNView'
 import dynamicStyles from './styles'
 
-const TNTextInput = props => {
+const DNTextInput = props => {
   const {
     style,
     capitalized,
@@ -53,4 +52,4 @@ const TNTextInput = props => {
   )
 }
 
-export default memo(useTrulyNative(TNTextInput, dynamicStyles))
+export default memo(useTrulyNative(DNTextInput, dynamicStyles))

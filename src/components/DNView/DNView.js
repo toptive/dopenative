@@ -4,7 +4,7 @@ import { useSpacing } from '../../hooks/useSpacing'
 import { useTrulyNative } from '../../theming'
 import dynamicStyles from './styles'
 
-const TNView = props => {
+const DNView = props => {
   const { children, style } = props
 
   const spacingStyles = useSpacing(props)
@@ -14,4 +14,4 @@ const TNView = props => {
   return <View style={viewStyles}>{children}</View>
 }
 
-export default React.memo(useTrulyNative(TNView, dynamicStyles))
+export default React.memo(useTrulyNative(DNView, dynamicStyles))

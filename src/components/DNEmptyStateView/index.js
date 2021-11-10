@@ -1,12 +1,12 @@
 import React from 'react'
 import { View } from 'react-native'
 import { useTrulyNative } from '../../theming'
-import TNButton from '../TNButton'
-import { TNText } from '../TNText'
-import { TNView } from '../TNView'
+import DNButton from '../DNButton'
+import { DNText } from '../DNText'
+import { DNView } from '../DNView'
 import dynamicStyles from './styles'
 
-const TNEmptyStateView = props => {
+const DNEmptyStateView = props => {
   const {
     title,
     description,
@@ -24,16 +24,16 @@ const TNEmptyStateView = props => {
     <View style={cStyle}>
       {imageView && <View style={styles.imageContainer}>{imageView}</View>}
       {title?.length && (
-        <TNText mt4 style={styles.title}>
+        <DNText mt4 style={styles.title}>
           {title}
-        </TNText>
+        </DNText>
       )}
       {description?.length && (
-        <TNText style={styles.description}>{description}</TNText>
+        <DNText style={styles.description}>{description}</DNText>
       )}
       {callToAction?.length && (
-        <TNView style={styles.buttonOuterContainer}>
-          <TNButton
+        <DNView style={styles.buttonOuterContainer}>
+          <DNButton
             text={callToAction}
             containerStyle={styles.buttonContainer}
             textStyle={styles.mainButtonText}
@@ -44,10 +44,10 @@ const TNEmptyStateView = props => {
             ml4
             mr4
           />
-        </TNView>
+        </DNView>
       )}
     </View>
   )
 }
 
-export default useTrulyNative(TNEmptyStateView, dynamicStyles)
+export default useTrulyNative(DNEmptyStateView, dynamicStyles)

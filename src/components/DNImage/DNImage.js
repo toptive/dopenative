@@ -1,20 +1,20 @@
 import React from 'react'
 import { Image } from 'react-native'
 import { useTrulyNative } from '../../theming'
-import { TNView } from '../TNView'
+import { DNView } from '../DNView'
 import dynamicStyles from './styles'
 
-const TNImage = props => {
+const DNImage = props => {
   const { children, style, rounded, source } = props
   const viewStyles = [style, rounded ? { borderRadius: 100000 } : null]
 
   return (
-    <TNView {...props}>
+    <DNView {...props}>
       <Image source={source} style={viewStyles}>
         {children}
       </Image>
-    </TNView>
+    </DNView>
   )
 }
 
-export default React.memo(useTrulyNative(TNImage, dynamicStyles))
+export default React.memo(useTrulyNative(DNImage, dynamicStyles))
