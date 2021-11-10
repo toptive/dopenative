@@ -1,0 +1,43 @@
+{
+  "name": "dopenative",
+  "version": "0.0.1",
+  "description": "A utility-first React Native Framework for Web, iOS and Android, compatible with Expo",
+  "main": "src/index.js",
+  "scripts": {
+    "precommit": "yarn lint",
+    "lint": "eslint src/**.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dopenative/dopenative.git"
+  },
+  "keywords": [
+    "android",
+    "ios",
+    "react native",
+    "bootstrap",
+    "nativebase",
+    "expo",
+    "component library",
+    "tailwind",
+    "material",
+    "cupertino",
+    "react native web",
+    "theming"
+  ],
+  "author": "Florian Marcu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dopenative/dopenative/issues"
+  },
+  "homepage": "https://dopenative.com",
+  "devDependencies": {
+    "@react-native-async-storage/async-storage": "^1.15.11",
+    "eslint": "^8.2.0",
+    "prettier": "^2.4.1",
+    "react": "^17.0.2",
+    "react-native": "^0.66.3",
+    "react-native-web": "^0.17.5"
+  }
+}
