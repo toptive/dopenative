@@ -1,0 +1,1 @@
+{"version":3,"sources":["useTranslations.js"],"names":["useTranslations","TranslationContext"],"mappings":";;;;;;;AAAA;;AAEA;;AAEO,MAAMA,eAAe,GAAG,MAAM,uBAAWC,wBAAX,CAA9B","sourcesContent":["import { useContext } from 'react'\n\nimport { TranslationContext } from '../localization/i18n'\n\nexport const useTranslations = () => useContext(TranslationContext)\n"]}
