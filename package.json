@@ -1,6 +1,6 @@
 {
   "name": "dopenative",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "A utility-first React Native Framework for Web, iOS and Android, compatible with Expo",
   "main": "src/index.js",
   "module": "dist/bundle.web.js",
@@ -8,7 +8,7 @@
     "precommit": "yarn lint",
     "lint": "eslint src/**.js",
     "test": "jest",
-    "build:web": "rollup --config",
+    "build:web": "rollup --config"
 
   },
   "repository": {
