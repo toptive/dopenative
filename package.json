@@ -1,12 +1,12 @@
 {
   "name": "dopenative",
-  "version": "0.0.18",
+  "version": "0.0.17",
   "description": "A utility-first React Native Framework for Web, iOS and Android, compatible with Expo",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/index.d.ts",
   "react-native": "src/index",
-  "source": "src/index.js",
+  "source": "src/index",
   "files": [
     "src",
     "lib",
