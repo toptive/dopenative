@@ -1,6 +1,6 @@
 {
   "name": "dopenative",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "A utility-first React Native Framework for Web, iOS and Android, compatible with Expo",
   "main": "src/index.js",
   "module": "dist/bundle.web.js",
@@ -42,6 +42,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.12.9",
+    "babel-loader": "^8.2.3",
     "eslint": "8.2.0",
     "i18n-js": "3.8.0",
     "jest": "^26.0.1",
