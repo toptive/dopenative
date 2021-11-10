@@ -8,6 +8,8 @@ import { DNTextInput } from './components/DNTextInput'
 import { DNView } from './components/DNView'
 import { DNImage } from './components/DNImage'
 
+import { TranslationProvider } from './localization/i18n'
+
 import theme, {
   extendTheme,
   useTrulyNative,
@@ -15,6 +17,8 @@ import theme, {
   DNContext,
   useTheme,
 } from './theming'
+
+import { useTranslations } from './hooks/useTranslations'
 
 export {
   DNButton,
@@ -32,4 +36,6 @@ export {
   useTrulyNative,
   DNProvider,
   useTheme,
+  TranslationProvider,
+  useTranslations,
 }
