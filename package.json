@@ -1,6 +1,6 @@
 {
   "name": "dopenative",
-  "version": "0.0.17",
+  "version": "0.0.16",
   "description": "A utility-first React Native Framework for Web, iOS and Android, compatible with Expo",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
