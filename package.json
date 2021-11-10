@@ -1,6 +1,6 @@
 {
   "name": "dopenative",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "A utility-first React Native Framework for Web, iOS and Android, compatible with Expo",
   "main": "src/index.js",
   "module": "dist/bundle.web.js",
@@ -49,6 +49,7 @@
     "prettier": "2.4.1",
     "react": "17.0.1",
     "react-native": "0.64.3",
+    "react-native-builder-bob": "^0.18.2",
     "rollup": "^2.34.1",
     "rollup-plugin-flow": "^1.1.1"
   },
@@ -60,5 +61,13 @@
   "files": [
     "src",
     "lib"
-  ]
+  ],
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module"
+    ]
+  }
 }
