@@ -1,15 +1,12 @@
 {
   "name": "dopenative",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "A utility-first React Native Framework for Web, iOS and Android, compatible with Expo",
   "main": "src/index.js",
-  "module": "dist/bundle.web.js",
   "scripts": {
     "precommit": "yarn lint",
     "lint": "eslint src/**.js",
-    "test": "jest",
-    "build:web": "rollup --config"
-
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -41,18 +38,13 @@
     "expo-localization": "11.0.0"
   },
   "devDependencies": {
-    "@babel/core": "7.12.9",
-    "babel-loader": "^8.2.3",
     "eslint": "8.2.0",
     "i18n-js": "3.8.0",
     "jest": "^26.0.1",
     "jest-expo": "^40.0.1",
     "prettier": "2.4.1",
     "react": "17.0.1",
-    "react-native": "0.64.3",
-    "react-native-builder-bob": "^0.18.2",
-    "rollup": "^2.34.1",
-    "rollup-plugin-flow": "^1.1.1"
+    "react-native": "0.64.3"
   },
   "peerDependencies": {
     "react": "*",
@@ -60,15 +52,6 @@
     "react-native": "*"
   },
   "files": [
-    "src",
-    "lib"
-  ],
-  "react-native-builder-bob": {
-    "source": "src",
-    "output": "lib",
-    "targets": [
-      "commonjs",
-      "module"
-    ]
-  }
+    "src"
+  ]
 }
