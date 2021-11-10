@@ -1,6 +1,6 @@
 {
   "name": "dopenative",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "A utility-first React Native Framework for Web, iOS and Android, compatible with Expo",
   "main": "src/index.js",
   "module": "dist/bundle.web.js",
@@ -56,5 +56,9 @@
     "react": "*",
     "react-dom": "*",
     "react-native": "*"
-  }
+  },
+  "files": [
+    "src",
+    "lib"
+  ]
 }
