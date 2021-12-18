@@ -1,6 +1,6 @@
 import React from 'react'
+import { useColorScheme } from 'react-native'
 import DNDefaultTheme from './default'
-import { useColorScheme } from 'react-native-appearance'
 
 export default DNDefaultTheme
 

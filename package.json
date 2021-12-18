@@ -1,6 +1,6 @@
 {
   "name": "dopenative",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "description": "A utility-first React Native Framework for Web, iOS and Android, compatible with Expo",
   "main": "src/index.js",
   "scripts": {
@@ -38,7 +38,6 @@
     "babel-loader": "^8.2.3",
     "expo-localization": "11.0.0",
     "i18n-js": "3.8.0",
-    "react-native-appearance": "^0.3.4"
   },
   "devDependencies": {
     "eslint": "8.2.0",
