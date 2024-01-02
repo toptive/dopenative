@@ -16,11 +16,8 @@ export const TranslationProvider = ({ children, translations }) => {
   i18n.translations = translations
   i18n.fallbacks = true
   // update layout direction
-  if(I18nManager.isRTL) 
-  {
-    I18nManager.allowRTL(false);  
-    I18nManager.forceRTL(false); 
-  }
+  I18nManager.allowRTL(false);  
+  I18nManager.forceRTL(false); 
 
   const localized = useCallback(
     (key, config) =>
